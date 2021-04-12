@@ -8,6 +8,7 @@ public class Scale_Script : MonoBehaviour
     public float maxScale = 0f;
     public float minScale = 0f;
     public float aux = 0f;
+    public float delta;
     public bool freeze = false;
     public bool hit = false;
 
@@ -19,16 +20,18 @@ public class Scale_Script : MonoBehaviour
 
     void Update()
     {
+        float delta = Time.fixedDeltaTime * 1000;
         mainLoop();
     }
 
     public void ApplyScaleRate()
-        {
+    {
             transform.localScale += Vector3.one * scaleRate;
     }
 
     public void mainLoop()
     {
+        scaleRate = aux;
 
         if (hit)
         {
