@@ -13,7 +13,6 @@ public class Movement_Script : MonoBehaviour
 
 
     float moveVelocity;
-
     bool grounded = true;
 
     void Update()
@@ -39,8 +38,6 @@ public class Movement_Script : MonoBehaviour
 
     void FixedUpdate()
     {
-        //float movingSpeedR = rb.velocity.x + speed; 
-        //float movingSpeedL = rb.velocity.x - speed; 
         float delta = Time.fixedDeltaTime;
 
         //Left Right Movement 

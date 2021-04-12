@@ -4,48 +4,66 @@ using UnityEngine;
 
 public class Scale_Script : MonoBehaviour
 {
-    public float scaleRate = 1.0f;
-    public float maxScale = 20.0f;
-    public float minScale = 1.0f;
+    public float scaleRate = 0f;
+    public float maxScale = 0f;
+    public float minScale = 0f;
+    public float aux = 0f;
     public bool freeze = false;
- 
- public void ApplyScaleRate()
-    {
-        transform.localScale += Vector3.one * scaleRate;
-    }
+    public bool hit = false;
 
-    public void mainLoop()
+
+    void Start()
     {
-        //if we exceed the defined range then correct the sign of scaleRate.
-        if (transform.localScale.x < minScale)
-        {
-            scaleRate = Mathf.Abs(scaleRate);
-        }
-        else if (transform.localScale.x > maxScale)
-        {
-            scaleRate = -Mathf.Abs(scaleRate);
-        }
-        ApplyScaleRate();
+        aux = scaleRate;
     }
 
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        mainLoop();
+    }
+
+    public void ApplyScaleRate()
         {
-            if (freeze)
+            transform.localScale += Vector3.one * scaleRate;
+    }
+
+    public void mainLoop()
+    {
+
+        if (hit)
+        {
+            if (transform.localScale.x > minScale)
             {
-                freeze = false;
-            }
-            else if (!freeze)
-            {
-                freeze = true;
+                scaleRate = -Mathf.Abs(scaleRate);
             }
         }
-
-        if (freeze)
+        else if (transform.localScale.x < maxScale)
         {
-            mainLoop();
+            scaleRate = aux;
+            scaleRate = Mathf.Abs(scaleRate);
+        }
+        else if (transform.localScale.x > maxScale) {
+            scaleRate = 0;
+        }    
+
+        ApplyScaleRate();
+        
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if ( collision.gameObject.tag == "Light")
+        {
+            hit = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Light")
+        {
+            hit = false;
+            freeze = false;
         }
     }
 }
