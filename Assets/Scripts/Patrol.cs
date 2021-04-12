@@ -5,30 +5,45 @@ using UnityEngine;
 public class Patrol : MonoBehaviour
 {
     public float speed;
-    public float distance;
+    public bool mustPatrol;
+    private bool mustTurn;
 
-    private bool movingRight = true;
+    public LayerMask groundLayer;
+    public Rigidbody2D rb;
+    public Transform groundCheckPos;
 
-    public Transform groundDetection;
-
-    private void Update()
+    public void Start()
     {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        mustPatrol = true;
+    }
 
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance);
-        if (groundInfo.collider == false) {
-            if (movingRight == true)
-            {
-                transform.eulerAngles = new Vector3(0, -180, 0);
-                movingRight = false;
-            }
-            else {
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                movingRight = true;
-            }
-        
+
+    public void Update()
+    {
+        if (mustPatrol) {
+            PAtrol();
         }
     }
 
+    public void FixedUpdate()
+    {
+        if (mustPatrol) {
+            mustTurn = !Physics2D.OverlapCircle(groundCheckPos.position, 0.1f, groundLayer);
+        }
+    }
+
+    public void PAtrol(){
+        if (mustTurn) {
+            FLip();
+        }
+        rb.velocity = new Vector2(speed * Time.fixedDeltaTime, rb.velocity.y);
+    }
+
+    public void FLip() {
+        mustPatrol = false;
+        transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+        speed *= -1;
+        mustPatrol = true;
+    }
 
 }

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Light
+  - luciernaga
   layers:
   - Default
   - TransparentFX
