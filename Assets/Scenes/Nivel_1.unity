@@ -1210,7 +1210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  jump: 4
+  jump: 4.5
   rb: {fileID: 698463827}
   maxX: 2.5
 --- !u!61 &698463826
@@ -1251,7 +1251,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1.1194218
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1336,7 +1336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ae7748e6e1953e40935dbf22e923dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleRate: 0.0007
+  scaleRate: 0.006
   maxScale: 1
   minScale: 0.5
   aux: 0
