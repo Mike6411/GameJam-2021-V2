@@ -56,7 +56,7 @@ public class Movement_Script : MonoBehaviour
 
         //Animator
         if (isJumping)
-        {
+        {Debug.Log("salto");
             isJumping = animator.GetBool(jumpParamID);
             animator.SetBool(jumpParamID, true);
         }
