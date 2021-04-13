@@ -12,6 +12,7 @@ TagManager:
   - stone
   - Death
   - Checkpoint
+  - limitePatrulla
   layers:
   - Default
   - TransparentFX
