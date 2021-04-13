@@ -83,7 +83,7 @@ public class Movement_Script : MonoBehaviour
      public void OnCollisionEnter2D(Collision2D collision)
      {
           if (collision.gameObject.tag == "grass") {
-              footstepsGrass.Play();
+                footstepsGrass.Play();
           }
           else if (collision.gameObject.tag == "stone")
           {

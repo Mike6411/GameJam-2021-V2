@@ -15,21 +15,37 @@ public class Scale_Script : MonoBehaviour
     public bool hit = false;
     public bool banana = false;
     public bool dead = false;
+    public Vector3 respawn;
 
 
     void Start()
     {
         aux = scaleRate;
+        respawn = transform.position;
     }
 
     void Update()
     {
         float delta = Time.fixedDeltaTime * 1000;
+        if (transform.localScale.x < deathScale)
+        {
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<Collider2D>().enabled = false;
+            Invoke("Respawn", 3f);
+        }
         mainLoop();
         //if ( transform.localScale > deathScale)
         //{
            
         //}
+    }
+
+    public void Respawn()
+    {
+        transform.position = respawn;
+
+        GetComponent<SpriteRenderer>().enabled = true;
+        GetComponent<Collider2D>().enabled = true;
     }
 
     public void ApplyScaleRate()
@@ -48,6 +64,10 @@ public class Scale_Script : MonoBehaviour
             {
                 scaleRate = -Mathf.Abs(scaleRate);
             }
+        }
+        else if (banana)
+        {
+            scaleRate = -Mathf.Abs(scaleRate);
         }
         else if (transform.localScale.x < maxScale)
         {
@@ -83,6 +103,10 @@ public class Scale_Script : MonoBehaviour
         if (collision.gameObject.tag == "Death")
         {
             banana = false;
+        }
+        if (collision.gameObject.tag == "Checkpoint")
+        {
+            respawn = transform.position;
         }
     }
 }
