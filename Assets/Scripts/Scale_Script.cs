@@ -14,6 +14,7 @@ public class Scale_Script : MonoBehaviour
     public bool freeze = false;
     public bool hit = false;
     public bool banana = false;
+    public bool hyperBanana = false;
     public bool dead = false;
     public Vector3 respawn;
 
@@ -69,6 +70,10 @@ public class Scale_Script : MonoBehaviour
         {
             scaleRate = -Mathf.Abs(scaleRate);
         }
+        else if (hyperBanana)
+        {
+            scaleRate = -Mathf.Abs(scaleRate * 4);
+        }
         else if (transform.localScale.x < maxScale)
         {
             scaleRate = aux;
@@ -92,6 +97,10 @@ public class Scale_Script : MonoBehaviour
         {
             banana = true;
         }
+        if (collision.gameObject.tag == "HyperDeath")
+        {
+            hyperBanana = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -103,6 +112,10 @@ public class Scale_Script : MonoBehaviour
         if (collision.gameObject.tag == "Death")
         {
             banana = false;
+        }
+        if (collision.gameObject.tag == "HyperDeath")
+        {
+            hyperBanana = false;
         }
         if (collision.gameObject.tag == "Checkpoint")
         {

@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 7350968907223826118, guid: e89fabe23683c294482dbeffa6aa60e0,
         type: 3}
       propertyPath: m_Name
-      value: Big Zone Death
+      value: Big Zone Death Slow
       objectReference: {fileID: 0}
     - target: {fileID: 7350968907223826118, guid: e89fabe23683c294482dbeffa6aa60e0,
         type: 3}
