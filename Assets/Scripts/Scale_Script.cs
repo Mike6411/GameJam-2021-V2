@@ -17,7 +17,7 @@ public class Scale_Script : MonoBehaviour
     public bool hyperBanana = false;
     public bool dead = false;
     public Vector3 respawn;
-
+    
 
     void Start()
     {
@@ -44,9 +44,12 @@ public class Scale_Script : MonoBehaviour
     public void Respawn()
     {
         transform.position = respawn;
-
+        transform.localScale = Vector3.one;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<Collider2D>().enabled = true;
+        banana = false;
+        hyperBanana = false;
     }
 
     public void ApplyScaleRate()
