@@ -5,13 +5,16 @@ using UnityEngine;
 public class Scale_Script : MonoBehaviour
 {
     public float scaleRate = 0f;
+    public float currentScale = 0f;
     public float maxScale = 0f;
     public float minScale = 0f;
+    public float deathScale = 0f;
     public float aux = 0f;
     public float delta;
     public bool freeze = false;
     public bool hit = false;
     public bool banana = false;
+    public bool dead = false;
 
 
     void Start()
@@ -23,11 +26,16 @@ public class Scale_Script : MonoBehaviour
     {
         float delta = Time.fixedDeltaTime * 1000;
         mainLoop();
+        //if ( transform.localScale > deathScale)
+        //{
+           
+        //}
     }
 
     public void ApplyScaleRate()
     {
-            transform.localScale += Vector3.one * scaleRate;
+        transform.localScale += Vector3.one * scaleRate;
+        //currentScale = transform.localScale += Vector3.one * scaleRate;
     }
 
     public void mainLoop()
@@ -60,6 +68,10 @@ public class Scale_Script : MonoBehaviour
         {
             hit = true;
         }
+        if (collision.gameObject.tag == "Death")
+        {
+            banana = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -67,7 +79,10 @@ public class Scale_Script : MonoBehaviour
         if (collision.gameObject.tag == "Light")
         {
             hit = false;
-            freeze = false;
+        }
+        if (collision.gameObject.tag == "Death")
+        {
+            banana = false;
         }
     }
 }
