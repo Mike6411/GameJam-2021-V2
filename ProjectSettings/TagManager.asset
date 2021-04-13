@@ -11,6 +11,7 @@ TagManager:
   - wood
   - stone
   - Death
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
