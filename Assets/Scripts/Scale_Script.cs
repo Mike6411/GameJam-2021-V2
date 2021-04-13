@@ -11,6 +11,7 @@ public class Scale_Script : MonoBehaviour
     public float delta;
     public bool freeze = false;
     public bool hit = false;
+    public bool banana = false;
 
 
     void Start()
