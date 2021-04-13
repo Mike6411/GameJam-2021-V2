@@ -11,7 +11,7 @@ TagManager:
   - wood
   - stone
   - Death
-  - Checkpoint
+  - limitePatrulla
   layers:
   - Default
   - TransparentFX
