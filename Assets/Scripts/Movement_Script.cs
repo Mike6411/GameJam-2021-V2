@@ -10,6 +10,7 @@ public class Movement_Script : MonoBehaviour
     public Rigidbody2D rb;
     private int counter = 0;
     public float maxX = 5;
+    public AudioSource footsteps;
 
 
     float moveVelocity;
@@ -70,5 +71,6 @@ public class Movement_Script : MonoBehaviour
         grounded = false;
     }
 
+   
 
 }
