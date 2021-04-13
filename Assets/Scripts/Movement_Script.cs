@@ -13,7 +13,7 @@ public class Movement_Script : MonoBehaviour
 
 
     float moveVelocity;
-    bool grounded = true;
+    public bool grounded = true;
 
     void Update()
     {
