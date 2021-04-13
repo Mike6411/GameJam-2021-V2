@@ -124,11 +124,12 @@ public class Movement_Script : MonoBehaviour
         grounded = false;
     }
 
-    public void OnCollisionStay2D(Collision collision)
+   
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "grass") {
+         if (collision.gameObject.tag == "grass") {
             footstepsGrass.Play();
-        }
+         }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -138,6 +139,10 @@ public class Movement_Script : MonoBehaviour
             //Game_Manager.Instance.LoadNextScene();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             Debug.Log("NEXT");
+        }
+
+        if (collision.gameObject.tag == "Finale") {
+            SceneManager.LoadScene("Final");
         }
    }
     

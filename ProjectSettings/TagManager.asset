@@ -13,6 +13,9 @@ TagManager:
   - Death
   - Checkpoint
   - limitePatrulla
+  - car
+  - HyperDeath
+  - Finale
   layers:
   - Default
   - TransparentFX
