@@ -2059,6 +2059,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3738713485051623355, guid: 8e0cc866e2788444db0d51abb15fb70b,
         type: 3}
+      propertyPath: sounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738713485051623355, guid: 8e0cc866e2788444db0d51abb15fb70b,
+        type: 3}
       propertyPath: sounds.Array.data[0].pitch
       value: 1
       objectReference: {fileID: 0}
@@ -2067,6 +2072,31 @@ PrefabInstance:
       propertyPath: sounds.Array.data[0].volume
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3738713485051623355, guid: 8e0cc866e2788444db0d51abb15fb70b,
+        type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: Footsteps Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738713485051623355, guid: 8e0cc866e2788444db0d51abb15fb70b,
+        type: 3}
+      propertyPath: sounds.Array.data[3].name
+      value: Footsteps Wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738713485051623355, guid: 8e0cc866e2788444db0d51abb15fb70b,
+        type: 3}
+      propertyPath: sounds.Array.data[4].name
+      value: Footsteps Stone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738713485051623355, guid: 8e0cc866e2788444db0d51abb15fb70b,
+        type: 3}
+      propertyPath: sounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 52e5ad2a1cb1ac943a1d316c95491cb7, type: 3}
+    - target: {fileID: 3738713485051623355, guid: 8e0cc866e2788444db0d51abb15fb70b,
+        type: 3}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: a11cc66de4914c7468e0f2eeaf618aba, type: 3}
     - target: {fileID: 4498692760428547077, guid: 8e0cc866e2788444db0d51abb15fb70b,
         type: 3}
       propertyPath: m_LocalPosition.x

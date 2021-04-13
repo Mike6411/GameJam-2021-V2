@@ -10,11 +10,20 @@ public class Movement_Script : MonoBehaviour
     public Rigidbody2D rb;
     private int counter = 0;
     public float maxX = 5;
-    public AudioSource footsteps;
+    public AudioSource footstepsGrass;
+    public AudioSource footstepsStone;
+    public AudioSource footstepsWood;
 
 
     float moveVelocity;
     public bool grounded = true;
+
+    public void Start()
+    {
+        footstepsGrass = GetComponent<AudioSource>();
+        footstepsStone = GetComponent<AudioSource>();
+        footstepsWood = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -71,6 +80,20 @@ public class Movement_Script : MonoBehaviour
         grounded = false;
     }
 
-   
+     public void OnCollisionEnter2D(Collision2D collision)
+     {
+          if (collision.gameObject.tag == "grass") {
+              footstepsGrass.Play();
+          }
+          else if (collision.gameObject.tag == "stone")
+          {
+                footstepsStone.Play();
+          } 
+          else if (collision.gameObject.tag == "wood")
+          {
+                footstepsWood.Play();
+          }
+     }
+
 
 }

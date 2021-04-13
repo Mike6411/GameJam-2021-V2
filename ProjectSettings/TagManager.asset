@@ -7,6 +7,10 @@ TagManager:
   - Light
   - luciernaga
   - tierra
+  - grass
+  - wood
+  - stone
+  - Death
   layers:
   - Default
   - TransparentFX

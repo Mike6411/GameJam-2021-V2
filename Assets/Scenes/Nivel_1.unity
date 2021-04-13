@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 226252045}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: tierra
+  m_TagString: grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2888,6 +2888,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piedrota
       objectReference: {fileID: 0}
+    - target: {fileID: 7158637487194357238, guid: a8b9464b1ff416e4fa38c20cf38854d9,
+        type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b9464b1ff416e4fa38c20cf38854d9, type: 3}
 --- !u!1001 &428311511
@@ -2901,6 +2906,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ARBOLCORTADO1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848203924821333800, guid: b12096fd022fda54f941c9041f09cc5c,
+        type: 3}
+      propertyPath: m_TagString
+      value: wood
       objectReference: {fileID: 0}
     - target: {fileID: 8276580174158249155, guid: b12096fd022fda54f941c9041f09cc5c,
         type: 3}
@@ -2971,6 +2981,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ARBOLHUECO
       objectReference: {fileID: 0}
+    - target: {fileID: 4476204354971779076, guid: 783ea5cb636911f4b84e7fedb2d31122,
+        type: 3}
+      propertyPath: m_TagString
+      value: wood
+      objectReference: {fileID: 0}
     - target: {fileID: 6675491389903320812, guid: 783ea5cb636911f4b84e7fedb2d31122,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3025,6 +3040,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6675491389903320812, guid: 783ea5cb636911f4b84e7fedb2d31122,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 783ea5cb636911f4b84e7fedb2d31122, type: 3}
@@ -3147,6 +3167,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SETA1
       objectReference: {fileID: 0}
+    - target: {fileID: 1639575418829859609, guid: efc9b1ca57592b34fbf27558d5137ed4,
+        type: 3}
+      propertyPath: m_TagString
+      value: grass
+      objectReference: {fileID: 0}
     - target: {fileID: 8445851311920377796, guid: efc9b1ca57592b34fbf27558d5137ed4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3255,7 +3280,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fa32058ce7cd38e4f96cd77b9c8bc344, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3439,6 +3464,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: arbolCaido
+      objectReference: {fileID: 0}
+    - target: {fileID: 433055129039637572, guid: e2e801bf048cab84588cf2ee18be18c9,
+        type: 3}
+      propertyPath: m_TagString
+      value: wood
       objectReference: {fileID: 0}
     - target: {fileID: 7193063668126125775, guid: e2e801bf048cab84588cf2ee18be18c9,
         type: 3}
@@ -3890,6 +3920,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SILLA 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7890017620599136699, guid: c131343ca5e4c9640adeefd8a406f847,
+        type: 3}
+      propertyPath: m_TagString
+      value: wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c131343ca5e4c9640adeefd8a406f847, type: 3}
 --- !u!4 &969074509 stripped
@@ -3909,6 +3944,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SETA1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639575418829859609, guid: efc9b1ca57592b34fbf27558d5137ed4,
+        type: 3}
+      propertyPath: m_TagString
+      value: grass
       objectReference: {fileID: 0}
     - target: {fileID: 8445851311920377796, guid: efc9b1ca57592b34fbf27558d5137ed4,
         type: 3}
@@ -4238,6 +4278,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SETA1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1639575418829859609, guid: efc9b1ca57592b34fbf27558d5137ed4,
+        type: 3}
+      propertyPath: m_TagString
+      value: grass
+      objectReference: {fileID: 0}
     - target: {fileID: 8445851311920377796, guid: efc9b1ca57592b34fbf27558d5137ed4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4505,6 +4550,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedra 1
       objectReference: {fileID: 0}
+    - target: {fileID: 483944939296339646, guid: 75f923f84700fdb4c9a7025f13c445e5,
+        type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 3942441630268769729, guid: 75f923f84700fdb4c9a7025f13c445e5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4665,6 +4715,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedra 1
       objectReference: {fileID: 0}
+    - target: {fileID: 483944939296339646, guid: 75f923f84700fdb4c9a7025f13c445e5,
+        type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 3942441630268769729, guid: 75f923f84700fdb4c9a7025f13c445e5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4743,6 +4798,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ARBOLCORTADO1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848203924821333800, guid: b12096fd022fda54f941c9041f09cc5c,
+        type: 3}
+      propertyPath: m_TagString
+      value: wood
       objectReference: {fileID: 0}
     - target: {fileID: 8276580174158249155, guid: b12096fd022fda54f941c9041f09cc5c,
         type: 3}
@@ -5197,6 +5257,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: piedra 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 483944939296339646, guid: 75f923f84700fdb4c9a7025f13c445e5,
+        type: 3}
+      propertyPath: m_TagString
+      value: stone
+      objectReference: {fileID: 0}
     - target: {fileID: 3942441630268769729, guid: 75f923f84700fdb4c9a7025f13c445e5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5612,6 +5677,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SETAGRANDE4
       objectReference: {fileID: 0}
+    - target: {fileID: 9156572560921197078, guid: 6b4ef580854f3f34ca1732f114476b64,
+        type: 3}
+      propertyPath: m_TagString
+      value: grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b4ef580854f3f34ca1732f114476b64, type: 3}
 --- !u!1001 &2097944514
@@ -5877,6 +5947,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SILLA
       objectReference: {fileID: 0}
+    - target: {fileID: 7890017620599136699, guid: c131343ca5e4c9640adeefd8a406f847,
+        type: 3}
+      propertyPath: m_TagString
+      value: wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c131343ca5e4c9640adeefd8a406f847, type: 3}
 --- !u!4 &2428313517694381832 stripped
@@ -5912,6 +5987,21 @@ PrefabInstance:
       propertyPath: footsteps
       value: 
       objectReference: {fileID: 698463825}
+    - target: {fileID: 4408428030502051683, guid: 9b364dab68127a046b7cb3ac4df59b63,
+        type: 3}
+      propertyPath: footstepsGrass
+      value: 
+      objectReference: {fileID: 698463825}
+    - target: {fileID: 4408428030502051683, guid: 9b364dab68127a046b7cb3ac4df59b63,
+        type: 3}
+      propertyPath: footstepsStone
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4408428030502051683, guid: 9b364dab68127a046b7cb3ac4df59b63,
+        type: 3}
+      propertyPath: footstepsWood
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4408428030502051687, guid: 9b364dab68127a046b7cb3ac4df59b63,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6050,6 +6140,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SETAGRANDELOOP
+      objectReference: {fileID: 0}
+    - target: {fileID: 2586105431028408554, guid: abccfe8d139afcb4187c09926869052c,
+        type: 3}
+      propertyPath: m_TagString
+      value: stone
       objectReference: {fileID: 0}
     - target: {fileID: 8499567842382537545, guid: abccfe8d139afcb4187c09926869052c,
         type: 3}

@@ -8,9 +8,9 @@ public class aipatrol : MonoBehaviour
     public float distance; //esto es lo que hace que se recorra la distancia sino queda parado temblando
 
     private bool movingRight = true;
-
+   
     public Transform groundDetection;
-
+  
     // Update is called once per frame
     void Update()
     {
@@ -29,4 +29,6 @@ public class aipatrol : MonoBehaviour
             }
         }
     }
+
+
 }
