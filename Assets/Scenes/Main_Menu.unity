@@ -1023,7 +1023,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.77, y: 1.01}
+  m_AnchoredPosition: {x: -9.7, y: 5.4953}
   m_SizeDelta: {x: 150.94461, y: 40.09291}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &981817447
@@ -1047,10 +1047,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -2136,7 +2136,7 @@ PrefabInstance:
     - target: {fileID: 3738713485051623355, guid: 8e0cc866e2788444db0d51abb15fb70b,
         type: 3}
       propertyPath: sounds.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3738713485051623355, guid: 8e0cc866e2788444db0d51abb15fb70b,
         type: 3}
@@ -2173,6 +2173,16 @@ PrefabInstance:
       propertyPath: sounds.Array.data[4].clip
       value: 
       objectReference: {fileID: 8300000, guid: a11cc66de4914c7468e0f2eeaf618aba, type: 3}
+    - target: {fileID: 3738713485051623355, guid: 8e0cc866e2788444db0d51abb15fb70b,
+        type: 3}
+      propertyPath: sounds.Array.data[5].name
+      value: Camp Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738713485051623355, guid: 8e0cc866e2788444db0d51abb15fb70b,
+        type: 3}
+      propertyPath: sounds.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9eb7e5f3916f5d444a17e2d722c190a1, type: 3}
     - target: {fileID: 4498692760428547077, guid: 8e0cc866e2788444db0d51abb15fb70b,
         type: 3}
       propertyPath: m_LocalPosition.x
