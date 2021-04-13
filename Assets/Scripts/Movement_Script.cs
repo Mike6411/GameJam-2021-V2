@@ -61,7 +61,7 @@ public class Movement_Script : MonoBehaviour
 
     }
     //Check if Grounded 
-    void OnCollisionEnter2D()
+    void OnCollisionStay2D()
     {
         grounded = true;
     }
