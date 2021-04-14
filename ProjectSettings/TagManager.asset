@@ -16,6 +16,7 @@ TagManager:
   - car
   - HyperDeath
   - Finale
+  - tapa
   layers:
   - Default
   - TransparentFX
