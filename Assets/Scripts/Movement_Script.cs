@@ -19,6 +19,7 @@ public class Movement_Script : MonoBehaviour
     private int walkParamID;
     private int jumpParamID;
 
+   
     float moveVelocity;
     public bool grounded = true;
 
@@ -72,23 +73,24 @@ public class Movement_Script : MonoBehaviour
         float delta = Time.fixedDeltaTime;
 
         bool isWalking = false;
+
+
         //Left Right Movement 
         if (Input.GetKey(KeyCode.A))
         {
-          // footstepsGrass.Play();
+            
             isWalking = true;
             if (rb.velocity.x > -maxX)
             {
-                rb.AddForce((Vector2.left * speed) , ForceMode2D.Force);
+                rb.AddForce((Vector2.left * speed), ForceMode2D.Force);
                 sr.flipX = true;
             }
-             
-        }
 
+        }
 
         if (Input.GetKey(KeyCode.D))
         {
-           // footstepsGrass.Play();
+            
             isWalking = true;
             if (rb.velocity.x < maxX)
             {
@@ -96,7 +98,7 @@ public class Movement_Script : MonoBehaviour
                 sr.flipX = false;
             }
             
-        }
+        } 
 
         //Animator
         if (isWalking)
