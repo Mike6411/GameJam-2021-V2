@@ -130,6 +130,11 @@ public class Movement_Script : MonoBehaviour
          if (collision.gameObject.tag == "grass") {
             footstepsGrass.Play();
          }
+
+        if (collision.gameObject.tag == "Floppa")
+        {
+            SceneManager.LoadScene("EasterEgg");
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -141,9 +146,12 @@ public class Movement_Script : MonoBehaviour
             Debug.Log("NEXT");
         }
 
-        if (collision.gameObject.tag == "Finale") {
+        if (collision.gameObject.tag == "Finale") 
+        {
             SceneManager.LoadScene("Final");
         }
-   }
+
+        
+    }
     
 }

@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 3b0732c899efa8840b2797e1abc8397c
+  - enabled: 1
+    path: Assets/Scenes/EasterEgg.unity
+    guid: 03781fe8e91c7634fb57d91c56a5caa9
   m_configObjects: {}
