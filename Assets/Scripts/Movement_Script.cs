@@ -81,7 +81,6 @@ public class Movement_Script : MonoBehaviour
             {
                 rb.AddForce((Vector2.left * speed) , ForceMode2D.Force);
                 sr.flipX = true;
-               
             }
              
         }
@@ -95,7 +94,6 @@ public class Movement_Script : MonoBehaviour
             {
                 rb.AddForce((Vector2.right * speed) , ForceMode2D.Force);
                 sr.flipX = false;
-                 
             }
             
         }
