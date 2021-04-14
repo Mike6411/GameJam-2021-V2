@@ -5332,7 +5332,7 @@ PrefabInstance:
     - target: {fileID: 1070307036689351690, guid: 466b1b9980793594dac3cc3cc842e0f5,
         type: 3}
       propertyPath: speed
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1070307036689351691, guid: 466b1b9980793594dac3cc3cc842e0f5,
         type: 3}
@@ -5536,6 +5536,16 @@ PrefabInstance:
     - target: {fileID: 1894970014226714292, guid: 291d9c67b750a034486c504e538d84fe,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894970014226714293, guid: 291d9c67b750a034486c504e538d84fe,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894970014226714293, guid: 291d9c67b750a034486c504e538d84fe,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -5878,6 +5888,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 1894970014226714293, guid: a06fd1482d2b6b345afcec86f5d9bcdc,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894970014226714293, guid: a06fd1482d2b6b345afcec86f5d9bcdc,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1894970014226714290, guid: a06fd1482d2b6b345afcec86f5d9bcdc, type: 3}
     - {fileID: 1894970014226714291, guid: a06fd1482d2b6b345afcec86f5d9bcdc, type: 3}
@@ -6162,7 +6182,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: LUCIERNAGAS 1 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1070307036689351690, guid: 466b1b9980793594dac3cc3cc842e0f5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 466b1b9980793594dac3cc3cc842e0f5, type: 3}
 --- !u!1 &1660750085 stripped
 GameObject:
